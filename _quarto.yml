@@ -16,7 +16,7 @@ execute:
 website:
   title: "Rob Furze"
   description: "Multiscale computational tribology — friction & lubrication in artificial hip joints."
-  site-url: "https://www.rfurze.co.uk"       
+  site-url: "https://rfurze.co.uk"       
   navbar:
     pinned: true
     left:
