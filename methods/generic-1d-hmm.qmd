@@ -1,0 +1,47 @@
+---
+title: "Generic 1D HMM for an elliptic multiscale problem"
+description: >
+  The Heterogeneous Multiscale Method on a 1D elliptic boundary-value problem:
+  a smooth macro baseline, a fine-resolved reference, and HMM coupling through
+  micro cell problems that feed effective coefficients back to the macro solve.
+date: "2026-06-01"
+categories: [HMM, homogenisation, FEniCS]
+image: figs/generic-1d-hmm-thumb.png
+toc: true
+---
+
+This notebook demonstrates the Heterogeneous Multiscale Method (HMM) on a clean
+model problem — the 1D elliptic equation
+
+$$
+-\frac{d}{dX}\!\left(\Gamma(H)\,\frac{dY}{dX}\right) = f(X),
+\qquad Y(0)=Y(L)=0,
+$$
+
+where the coefficient $\Gamma$ carries a fast microscale oscillation
+$H = H_0(X) + H_1(x/\lambda,\phi)$. Three scenarios are compared: a **smooth**
+macro solve using only $H_0$; a **fine-resolved** deterministic solve that
+resolves every microscale wiggle; and the **HMM** solve, where micro cell
+problems supply effective $\bar\Gamma$ and $\bar f$ that correct a coarse macro
+solve. The HMM result should track the expensive fine-resolved reference at a
+fraction of the cost.
+
+::: {.launch}
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/{{< var github.user >}}/{{< var github.repo >}}/blob/{{< var github.branch >}}/notebooks/Generic1DHMM_FEniCS2.ipynb)
+[![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/{{< var github.user >}}/{{< var github.repo >}}/{{< var github.branch >}}?labpath=notebooks/Generic1DHMM_FEniCS2.ipynb)
+[Download notebook (.ipynb)](../notebooks/Generic1DHMM_FEniCS2.ipynb){download="Generic1DHMM_FEniCS2.ipynb"}
+:::
+
+::: {.callout-tip collapse="true"}
+## Running it yourself
+**Colab** is the smoothest route — the notebook's first cell installs FEniCS
+automatically (via fem-on-colab) on a real cloud kernel; just run all cells.
+**Binder** builds the environment from `binder/environment.yml` and needs no
+login, but the legacy-FEniCS image is heavy, so the first launch can take
+several minutes while it builds.
+:::
+
+The full notebook is embedded below (install cell and console logs trimmed for
+reading; the runnable version is linked above).
+
+{{< embed ../_display/Generic1DHMM_FEniCS2.ipynb echo=true >}}

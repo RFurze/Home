@@ -1,0 +1,40 @@
+---
+pagetitle: "Rob [Surname] — Computational Tribology"
+toc: false
+page-layout: article
+---
+
+::: {.hero}
+[multiscale tribology · elastohydrodynamic lubrication]{.eyebrow}
+
+# Rob [Surname] {.hero-name}
+
+I build multiscale computational tools that predict friction and lubrication in
+artificial hip-joint bearings — coupling microscale surface physics to
+full-joint elastohydrodynamic simulation.
+
+[PhD researcher · EPSRC CDT in Fluid Dynamics · University of Leeds]{.hero-sub}
+
+[Methods & code →](methods/index.qmd){.btn-accent} &nbsp;&nbsp; [Read the research](research.qmd)
+:::
+
+[overview]{.eyebrow}
+
+## What you'll find here
+
+The [methods](methods/index.qmd) section collects runnable notebooks that
+demonstrate the numerical machinery behind the research — homogenisation and
+the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the
+macro/micro coupling that drives the full lubrication model. Each one can be
+opened and run in the browser via Colab or Binder, or downloaded as a notebook.
+
+[contact]{.eyebrow}
+
+## Contact
+
+::: {.contact}
+[Email](mailto:you@example.com)
+[Google Scholar](https://scholar.google.com/)
+[ORCID](https://orcid.org/)
+[GitHub](https://github.com/YOUR-GH-USERNAME)
+:::
