@@ -39,7 +39,7 @@
     "href": "methods/index.html",
     "title": "Methods & code",
     "section": "",
-    "text": "Each entry renders statically (every figure is baked in, so the page loads instantly), with one-click buttons to run or download the underlying notebook.\n\n\n\n\n\n\n\n\n\n\nGeneric 1D HMM for an elliptic multiscale problem\n\n\n\nHMM\n\nhomogenisation\n\nFEniCS\n\n\n\nThe Heterogeneous Multiscale Method on a 1D elliptic boundary-value problem: a smooth macro baseline, a fine-resolved reference, and HMM coupling through micro cell problems…\n\n\n\nJun 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Each entry renders statically (every figure is baked in, so the page loads instantly), with one-click buttons to run or download the underlying notebook.\n\n\n\n\n\n\n\n\n\n\n1D lubrication HMM: the Reynolds equation across scales\n\n\n\nHMM\n\nlubrication\n\nReynolds equation\n\nNGSolve\n\n\n\nThe Heterogeneous Multiscale Method applied to a 1D lubrication film: the steady, isoviscous, Newtonian Reynolds equation solved as a smooth macro baseline, a fine-resolved…\n\n\n\nJun 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeneric 1D HMM for an elliptic multiscale problem\n\n\n\nHMM\n\nhomogenisation\n\nFEniCS\n\n\n\nThe Heterogeneous Multiscale Method on a 1D elliptic boundary-value problem: a smooth macro baseline, a fine-resolved reference, and HMM coupling through micro cell problems…\n\n\n\nJun 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
