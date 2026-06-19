@@ -171,12 +171,12 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="eyebrow">the problem</span></p>
 <section id="friction-across-scales" class="level2">
 <h2 class="anchored" data-anchor-id="friction-across-scales">Friction across scales</h2>
-<p>Lubrication in an artificial hip joint is set both by the gross geometry and kinematics of the bearing and by physics that lives at the scale of surface texture and the thin lubricant film. Resolving everything at once is prohibitive, so the work centres on <strong>multiscale coupling</strong>: capturing the microscale behaviour cheaply and feeding its effect back into a tractable macroscale model.</p>
+<p>Lubrication in a ball-in-socket bearing is set both by the gross geometry and kinematics of the bearing and by physics that lives at the scale of surface texture and the thin lubricant film. Resolving everything at once is prohibitive, so the work centres on a multiscale method: capturing the microscale behaviour cheaply and feeding its effect back into a macroscale model.</p>
 <p><span class="eyebrow">approach</span></p>
 </section>
 <section id="heterogeneous-multiscale-method" class="level2">
 <h2 class="anchored" data-anchor-id="heterogeneous-multiscale-method">Heterogeneous Multiscale Method</h2>
-<p>The macro model solves the governing lubrication equations on a coarse mesh. At each point where microscale information is needed, a small <strong>cell problem</strong> is solved over a representative patch and homogenised to give effective coefficients — which then correct the macro solve. The <a href="./methods/index.html">methods</a> section works this idea through on a clean 1D elliptic model problem before it appears in the full elastohydrodynamic setting.</p>
+<p>The macro model solves the governing lubrication equations on a coarse mesh. At each point where microscale information is needed, a small representative cell is solved and homogenised to give effective coefficients — which then correct the macro solve. The <a href="./methods/index.html">methods</a> section works this idea through on a clean 1D elliptic model problem before it appears in the full elastohydrodynamic setting.</p>
 <p><span class="eyebrow">tools</span></p>
 </section>
 <section id="tools" class="level2">
@@ -187,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <ul>
-<li><em>Manuscript in preparation</em> — add entries here.</li>
+<li><em>Manuscript in preparation</em></li>
 </ul>
 
 

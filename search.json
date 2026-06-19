@@ -11,14 +11,14 @@
     "href": "research.html#friction-across-scales",
     "title": "Research",
     "section": "Friction across scales",
-    "text": "Friction across scales\nLubrication in an artificial hip joint is set both by the gross geometry and kinematics of the bearing and by physics that lives at the scale of surface texture and the thin lubricant film. Resolving everything at once is prohibitive, so the work centres on multiscale coupling: capturing the microscale behaviour cheaply and feeding its effect back into a tractable macroscale model.\napproach"
+    "text": "Friction across scales\nLubrication in a ball-in-socket bearing is set both by the gross geometry and kinematics of the bearing and by physics that lives at the scale of surface texture and the thin lubricant film. Resolving everything at once is prohibitive, so the work centres on a multiscale method: capturing the microscale behaviour cheaply and feeding its effect back into a macroscale model.\napproach"
   },
   {
     "objectID": "research.html#heterogeneous-multiscale-method",
     "href": "research.html#heterogeneous-multiscale-method",
     "title": "Research",
     "section": "Heterogeneous Multiscale Method",
-    "text": "Heterogeneous Multiscale Method\nThe macro model solves the governing lubrication equations on a coarse mesh. At each point where microscale information is needed, a small cell problem is solved over a representative patch and homogenised to give effective coefficients — which then correct the macro solve. The methods section works this idea through on a clean 1D elliptic model problem before it appears in the full elastohydrodynamic setting.\ntools"
+    "text": "Heterogeneous Multiscale Method\nThe macro model solves the governing lubrication equations on a coarse mesh. At each point where microscale information is needed, a small representative cell is solved and homogenised to give effective coefficients — which then correct the macro solve. The methods section works this idea through on a clean 1D elliptic model problem before it appears in the full elastohydrodynamic setting.\ntools"
   },
   {
     "objectID": "research.html#tools",
@@ -32,7 +32,7 @@
     "href": "research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\n\nManuscript in preparation — add entries here."
+    "text": "Publications\n\nManuscript in preparation"
   },
   {
     "objectID": "methods/generic-1d-hmm.html",
