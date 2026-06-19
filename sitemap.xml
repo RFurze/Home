@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rfurze.co.uk/research.html</loc>
-    <lastmod>2026-06-19T16:46:18.981Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rfurze.co.uk/methods/generic-1d-hmm.html</loc>
-    <lastmod>2026-06-19T16:46:18.977Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rfurze.co.uk/index.html</loc>
-    <lastmod>2026-06-19T16:46:18.975Z</lastmod>
+    <lastmod>2026-06-19T16:46:38.347Z</lastmod>
   </url>
   <url>
     <loc>https://rfurze.co.uk/methods/index.html</loc>
-    <lastmod>2026-06-19T16:46:18.977Z</lastmod>
+    <lastmod>2026-06-19T16:46:38.341Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rfurze.co.uk/index.html</loc>
+    <lastmod>2026-06-19T16:46:38.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rfurze.co.uk/methods/generic-1d-hmm.html</loc>
+    <lastmod>2026-06-19T16:46:38.341Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rfurze.co.uk/methods/lubrication-1d-hmm.html</loc>
+    <lastmod>2026-06-19T16:46:38.341Z</lastmod>
   </url>
 </urlset>
