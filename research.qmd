@@ -11,11 +11,11 @@ Placeholder copy — edit freely. The structure below is a starting point.
 
 ## Friction across scales
 
-Lubrication in an artificial hip joint is set both by the gross geometry and
+Lubrication in a ball-in-socket bearing is set both by the gross geometry and
 kinematics of the bearing and by physics that lives at the scale of surface
 texture and the thin lubricant film. Resolving everything at once is
-prohibitive, so the work centres on **multiscale coupling**: capturing the
-microscale behaviour cheaply and feeding its effect back into a tractable
+prohibitive, so the work centres on a multiscale method: capturing the
+microscale behaviour cheaply and feeding its effect back into a
 macroscale model.
 
 [approach]{.eyebrow}
@@ -23,11 +23,11 @@ macroscale model.
 ## Heterogeneous Multiscale Method
 
 The macro model solves the governing lubrication equations on a coarse mesh.
-At each point where microscale information is needed, a small **cell problem**
-is solved over a representative patch and homogenised to give effective
-coefficients — which then correct the macro solve. The [methods](methods/index.qmd)
-section works this idea through on a clean 1D elliptic model problem before it
-appears in the full elastohydrodynamic setting.
+At each point where microscale information is needed, a small representative
+cell is solved and homogenised to give effective coefficients — which then
+correct the macro solve. The [methods](methods/index.qmd) section works
+this idea through on a clean 1D elliptic model problem before it appears
+in the full elastohydrodynamic setting.
 
 [tools]{.eyebrow}
 
@@ -41,4 +41,4 @@ the production solver.
 
 ## Publications
 
-- *Manuscript in preparation* — add entries here.
+- *Manuscript in preparation*
