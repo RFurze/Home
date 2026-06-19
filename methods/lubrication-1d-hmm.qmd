@@ -1,0 +1,58 @@
+---
+title: "1D lubrication HMM: the Reynolds equation across scales"
+description: >
+  The Heterogeneous Multiscale Method applied to a 1D lubrication film:
+  the steady, isoviscous, Newtonian Reynolds equation solved as a smooth macro
+  baseline, a fine-resolved textured reference, and an HMM coupling whose micro
+  cell problems supply effective coefficients to a coarse macro solve.
+  Implemented in NGSolve.
+date: "2026-06-19"
+categories: [HMM, lubrication, Reynolds equation, NGSolve]
+image: figs/lubrication-1d-hmm-thumb.png
+toc: true
+---
+
+This is the lubrication counterpart to the [generic 1D HMM demo](generic-1d-hmm.qmd):
+the same multiscale machinery, but applied to a thin-film bearing rather than a
+generic elliptic problem. We solve the steady, isoviscous, Newtonian **Reynolds
+equation** in flux-conservation form,
+
+$$
+\nabla\cdot(\rho\,q) = 0,
+\qquad
+q = \frac{U\,H(x)}{2} \;-\; \frac{H^{3}(x)}{12\,\eta}\,\nabla P,
+$$
+
+where $H(x)$ is the film thickness, $U$ the entrainment speed, $\eta$ the
+viscosity and $P$ the pressure — the Couette (shear-driven) and Poiseuille
+(pressure-driven) contributions to the flux $q$. As in the elliptic demo, three
+scenarios are compared: a **smooth** macro solve using only the large-scale film
+shape; a **deterministic** solve that resolves the full textured film on a fine
+mesh; and the **HMM** solve, where micro cell problems over a representative
+patch of texture feed an effective flux relation back to a coarse macro solve.
+The finite-element solves use NGSolve.
+
+::: {.launch}
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/{{< var github.user >}}/{{< var github.repo >}}/blob/{{< var github.branch >}}/notebooks/1DLubrication_NGSolve.ipynb)
+[Download notebook (.ipynb)](../notebooks/1DLubrication_NGSolve.ipynb){download="1DLubrication_NGSolve.ipynb"}
+:::
+
+::: {.callout-tip collapse="true"}
+## Running it yourself
+**Colab** is the route to use here — the notebook's first cell installs NGSolve
+automatically (via fem-on-colab) on a real cloud kernel.
+
+One dependency to wire up first: the notebook imports a local helper module with
+`from plot_funcs import *`. Opening the notebook in Colab loads only the
+`.ipynb`, not the rest of the repo, so that import will fail until `plot_funcs.py`
+is made available — either by adding a setup cell that fetches it
+(`!wget <raw-github-url>/plot_funcs.py`) or by pasting its contents into the
+notebook. (Binder isn't offered for this one: the repo's shared Binder
+environment targets the FEniCS notebooks, whereas this one self-installs NGSolve
+on Colab.)
+:::
+
+The full notebook is embedded below (install cell and console logs trimmed for
+reading; the runnable version is linked above).
+
+{{< embed ../_display/1DLubrication_NGSolve.ipynb echo=true >}}
