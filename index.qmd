@@ -1,11 +1,11 @@
 ---
-pagetitle: "Rob [Surname] — Computational Tribology"
+pagetitle: "Robin Furze — Computational Tribology"
 toc: false
 page-layout: article
 ---
 
 ::: {.hero}
-[multiscale tribology · elastohydrodynamic lubrication]{.eyebrow}
+[multiscale methods · elastohydrodynamic lubrication]{.eyebrow}
 
 # Rob [Surname] {.hero-name}
 
@@ -23,7 +23,7 @@ full-joint elastohydrodynamic simulation.
 ## What you'll find here
 
 The [methods](methods/index.qmd) section collects runnable notebooks that
-demonstrate the numerical machinery behind the research — homogenisation and
+demonstrate the numerical machinery behind the research —
 the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the
 macro/micro coupling that drives the full lubrication model. Each one can be
 opened and run in the browser via Colab or Binder, or downloaded as a notebook.
@@ -33,7 +33,7 @@ opened and run in the browser via Colab or Binder, or downloaded as a notebook.
 ## Contact
 
 ::: {.contact}
-[Email](mailto:you@example.com)
+[Email](mailto:py07rf@leeds.com)
 [Google Scholar](https://scholar.google.com/)
 [ORCID](https://orcid.org/)
 [GitHub](https://github.com/YOUR-GH-USERNAME)
