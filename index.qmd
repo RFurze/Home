@@ -1,5 +1,5 @@
 ---
-pagetitle: "Robin Furze — Computational Tribology"
+pagetitle: "Robin Furze — Multiscale Methods"
 toc: false
 page-layout: article
 ---
