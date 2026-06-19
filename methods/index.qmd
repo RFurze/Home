@@ -6,6 +6,7 @@ listing:
   id: method-listing
   contents:
     - "generic-1d-hmm.qmd"
+    - "lubrication-1d-hmm.qmd"
   type: grid
   fields: [image, title, description, date, categories]
   sort: "date desc"
