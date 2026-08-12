@@ -56,3 +56,11 @@ The full notebook is embedded below (install cell and console logs trimmed for
 reading; the runnable version is linked above).
 
 {{< embed ../_display/1DLubrication_NGSolve.ipynb echo=true >}}
+
+::: {.callout-note appearance="simple"}
+## Reuse
+The notebook code is released under the [MIT License](../licence.qmd); the
+written explanation and figures are released under
+[CC BY 4.0](../licence.qmd). Reuse in your own teaching is welcome — see
+[licence & reuse](../licence.qmd) for how to attribute.
+:::

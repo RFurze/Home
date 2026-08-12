@@ -16,6 +16,8 @@ listing:
 
 Each entry renders statically (every figure is baked in, so the page loads
 instantly), with one-click buttons to run or download the underlying notebook.
+Code is open under the [MIT License](../licence.qmd) and the written material
+under [CC BY 4.0](../licence.qmd), so these are free to reuse and teach from.
 
 ::: {#method-listing}
 :::

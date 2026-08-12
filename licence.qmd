@@ -1,0 +1,60 @@
+---
+title: "Licence & reuse"
+subtitle: "Code is MIT. Written and teaching material is CC BY 4.0."
+toc: true
+---
+
+Everything on this site is openly licensed, split into two categories so that
+code and teaching material each get terms that suit them.
+
+[code]{.eyebrow}
+
+## Code — MIT
+
+All code — the notebooks in
+[`notebooks/`](https://github.com/RFurze/Home/tree/main/notebooks), every code
+cell embedded in the pages below, and the site's own build configuration and
+styling — is licensed under the
+[MIT License](https://github.com/RFurze/Home/blob/main/LICENSE-code).
+
+You may use, copy, modify, merge, publish, distribute, sublicense and sell it,
+including commercially, provided the copyright notice and permission notice are
+retained. It is provided without warranty.
+
+[teaching material]{.eyebrow}
+
+## Written & teaching material — CC BY 4.0
+
+The prose, mathematical exposition, figures and images on this site — and the
+markdown (non-code) cells of the notebooks — are licensed under
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+([full text](https://github.com/RFurze/Home/blob/main/LICENSE-teaching-materials)).
+
+You may share and adapt this material for any purpose, including commercially
+and in your own teaching, provided you give appropriate credit, link to the
+licence, and indicate if changes were made.
+
+[attribution]{.eyebrow}
+
+## How to attribute
+
+For teaching material, a line like this is enough:
+
+> Robin Furze, *Multiscale methods for lubrication* ([rfurze.co.uk](https://rfurze.co.uk)),
+> 2026. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+To cite the repository formally, use the metadata in
+[`CITATION.cff`](https://github.com/RFurze/Home/blob/main/CITATION.cff) — GitHub
+renders it under **Cite this repository** in the sidebar.
+
+[third party]{.eyebrow}
+
+## Third-party material
+
+Some of the HMM material here builds on ideas developed with colleagues in the
+[HMM Workshop](https://github.com/joshuamontgomery1/HMM-Workshop)
+(Montgomery, Furze, Baxter-Chapman & de Boer, University of Leeds;
+[doi:10.5281/zenodo.21834798](https://doi.org/10.5281/zenodo.21834798)), itself
+released under MIT and CC BY 4.0. The scientific libraries used — FEniCS,
+NGSolve, PETSc and others — remain under their own licences, as do any
+externally sourced figures, which are credited where they appear.
