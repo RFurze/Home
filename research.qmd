@@ -3,10 +3,6 @@ title: "Research"
 subtitle: "Multiscale prediction of friction and lubrication in total hip replacement bearings."
 ---
 
-::: {.callout-note appearance="simple"}
-Placeholder copy — edit freely. The structure below is a starting point.
-:::
-
 [the problem]{.eyebrow}
 
 ## Friction across scales
