@@ -51,7 +51,7 @@ renders it under **Cite this repository** in the sidebar.
 
 ## Third-party material
 
-Some of the HMM material here builds on ideas developed with colleagues in the
+Some of the HMM material here forms part of a workshop developed with colleagues in the
 [HMM Workshop](https://github.com/joshuamontgomery1/HMM-Workshop)
 (Montgomery, Furze, Baxter-Chapman & de Boer, University of Leeds;
 [doi:10.5281/zenodo.21834798](https://doi.org/10.5281/zenodo.21834798)), itself
