@@ -32,7 +32,7 @@
     "href": "research.html#publications",
     "title": "Research",
     "section": "Publications",
-    "text": "Publications\n\nManuscript in preparation"
+    "text": "Publications\nR. Furze, P. K. Jimack, M. Bryant, M. Al-Hajjar, L. Wang and G. de Boer. A transient multiscale framework for elastohydrodynamic lubrication of rough ball-in-socket bearings. Manuscript in preparation for Computer Methods in Applied Mechanics and Engineering.\nThe multiscale model reproduces a high-resolution deterministic solution to within 2% in minimum film thickness and 1% in pressure, at a ninefold reduction in computational cost, under ASTM F3143 reciprocating hip loading."
   },
   {
     "objectID": "methods/index.html",
@@ -77,6 +77,76 @@
     "text": "Third-party material\nSome of the HMM material here forms part of a workshop developed with colleagues in the HMM Workshop (Montgomery, Furze, Baxter-Chapman & de Boer, University of Leeds; doi:10.5281/zenodo.21834798), itself released under MIT and CC BY 4.0. The scientific libraries used — FEniCS, NGSolve, PETSc and others — remain under their own licences, as do any externally sourced figures, which are credited where they appear."
   },
   {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Email ORCID GitHub\nprofile"
+  },
+  {
+    "objectID": "cv.html#research-profile",
+    "href": "cv.html#research-profile",
+    "title": "CV",
+    "section": "Research profile",
+    "text": "Research profile\nComputational engineer with a physics background and a decade of professional practice between the two. I hold an integrated Master’s in Theoretical Physics and returned to academia after ten years as a Chartered Accountant to complete an MSc in Medical Engineering, and am now finishing a PhD in the EPSRC Centre for Doctoral Training in Fluid Dynamics at the University of Leeds.\nThe PhD develops novel multiscale computational tools to predict friction and lubrication in total hip replacement bearings — coupling microscale surface physics to full-joint elastohydrodynamic simulation via the Heterogeneous Multiscale Method, implemented in FEniCS and NGSolve with HPC parameter studies. It is supervised across computer science, mechanical engineering and industry, with DePuy Synthes (Johnson & Johnson MedTech) as industrial partner. Expected completion March 2027.\nThe intervening decade was spent diagnosing and fixing complex operational problems in large organisations: scoping the real question, building the model, delivering to a deadline, and carrying non-specialist stakeholders through the result. Those habits transfer directly to computational research, and to collaboration with the clinicians and manufacturers who use it.\neducation"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\n\n\n2022 — 2027\n\n\nPhD, Fluid Dynamics EPSRC CDT in Fluid Dynamics, School of Computer Science, University of Leeds\nThesis: Predicting Friction in Total Hip Replacement Bearings — multiscale computational prediction of friction and lubrication in total hip replacement bearings. Expected completion March 2027.\nSupervisors: Prof Peter Jimack (School of Computer Science, Leeds), Dr Gregory de Boer (School of Mechanical Engineering, Leeds), Dr Michael Bryant (School of Engineering, University of Birmingham), Dr Lin Wang and Dr Mazen Al-Hajjar (DePuy Synthes Joint Reconstruction, Johnson & Johnson MedTech).\n\n\n\n\n2021 — 2022\n\n\nMSc, Medical Engineering University of Leeds\nProject: Design of a Rapid Microfluidic Mixer to Enable to Study of Nanoparticle Phase Change Dynamics.\n\n\n\n\n2007 — 2011\n\n\nMPhys & BSc, Theoretical Physics (First Class Honours) University of Leeds\nMPhys project: Proteins in flow fields — the effect of flow on proteins responsible for haemostasis, and its medical implications.\n\n\nprofessional"
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "CV",
+    "section": "Professional experience",
+    "text": "Professional experience\nTen years as a Chartered Accountant, working across aerospace, manufacturing and professional services on complex financial and operational problems — root-cause investigation, system design and implementation, financial modelling, and training finance teams.\n\n\n2015 — 2021\n\n\nSpecial Projects Manager Grant Thornton UK LLP, Leeds\nIdentified and diagnosed business problems and ran the projects that fixed them: system design and implementation, development of financial models, and training of client finance teams. Managed projects end to end, from investigatory phase and project plan through delivery to deadline.\n\n\n\n\n2011 — 2015\n\n\nAudit & Accounts Senior (ACA) Lewis Golden LLP, London\nFinancial statement audits and preparation under UK GAAP and IFRS across a wide range of client industries. Managed engagements with teams of up to four, including supervision, review, training and appraisal. Advised clients on the transition to FRS 102.\n\n\n\n\n2011 — 2014\n\n\nACA, Chartered Accountant Institute of Chartered Accountants in England and Wales\nFirst-time passes in all examinations; exam qualified December 2013.\n\n\n\n\n2009\n\n\nUndergraduate research bursary Materials & Engineering Research Institute, Sheffield Hallam University\nSummer research placement in the physics of quantum cascade lasers.\n\n\npublications"
+  },
+  {
+    "objectID": "cv.html#publications-preprints",
+    "href": "cv.html#publications-preprints",
+    "title": "CV",
+    "section": "Publications & preprints",
+    "text": "Publications & preprints\nR. Furze, P. K. Jimack, M. Bryant, M. Al-Hajjar, L. Wang and G. de Boer. A transient multiscale framework for elastohydrodynamic lubrication of rough ball-in-socket bearings. Manuscript in preparation for Computer Methods in Applied Mechanics and Engineering.\nA fully transient Heterogeneous Multiscale Method for elastohydrodynamic lubrication in conformal bearings, in which microscale simulations of idealised roughness return additive corrections to macroscale flux and load-bearing capacity. The multiscale model matches a high-resolution deterministic solution to within 2% in minimum film thickness and 1% in pressure at a ninefold reduction in computational cost, demonstrated under ASTM F3143 reciprocating hip loading and velocity profiles.\nsoftware"
+  },
+  {
+    "objectID": "cv.html#software-teaching-materials",
+    "href": "cv.html#software-teaching-materials",
+    "title": "CV",
+    "section": "Software & teaching materials",
+    "text": "Software & teaching materials\n\n\n2026\n\n\nrfurze.co.uk — multiscale methods for lubrication Runnable notebooks: HMM, microscale cell problems, macro/micro coupling\nOpen-source demonstration and teaching code (MIT / CC BY 4.0). Repository · Methods & code\n\n\n\n\n2025-2026\n\n\nHMM Workshop Montgomery, Furze, Baxter-Chapman & de Boer — University of Leeds\nWorkshop materials on the Heterogeneous Multiscale Method. doi:10.5281/zenodo.21834798\n\n\ntalks"
+  },
+  {
+    "objectID": "cv.html#talks-posters",
+    "href": "cv.html#talks-posters",
+    "title": "CV",
+    "section": "Talks & posters",
+    "text": "Talks & posters\n\n\nSep 2025\n\n\n[Multiscale Modelling of Transient Hydrodynamic Lubrication in Rough Ball-in-Socket Bearings] 50th Leeds–Lyon Symposium on Tribology, University of Leeds\nContributed talk.\n\n\n\n\nSep 2024\n\n\n[Predicting Friction in Total Hip Replacement Bearings: A Multiscale Approach] 49th Leeds–Lyon Symposium on Tribology, Écully, France\nContributed talk.\n\n\n\n\nSep 2024\n\n\n[Predicting Friction in Total Hip Replacement Bearings: A Multiscale Approach] UK Fluids Conference, Swansea University\nPoster presentation.\n\n\nteaching"
+  },
+  {
+    "objectID": "cv.html#teaching-outreach",
+    "href": "cv.html#teaching-outreach",
+    "title": "CV",
+    "section": "Teaching & outreach",
+    "text": "Teaching & outreach\n\n\n2024 — 2025\n\n\nDemonstrator — Engineering Computational Methods (MSc) University of Leeds\nLaboratory demonstrating on a master’s-level computational methods module.\n\n\nskills"
+  },
+  {
+    "objectID": "cv.html#technical-skills",
+    "href": "cv.html#technical-skills",
+    "title": "CV",
+    "section": "Technical skills",
+    "text": "Technical skills\nNumerical methods — finite element method, homogenisation, the Heterogeneous Multiscale Method, transient elastohydrodynamic lubrication, the Reynolds equation, cavitation modelling, fluid–structure coupling.\nScientific computing — Python, FEniCS, NGSolve, PETSc, MATLAB, C/C++. HPC parameter studies.\nProfessional — project and stakeholder management, financial modelling, technical communication to non-specialist audiences.\nservice"
+  },
+  {
+    "objectID": "cv.html#service-responsibilities",
+    "href": "cv.html#service-responsibilities",
+    "title": "CV",
+    "section": "Service & responsibilities",
+    "text": "Service & responsibilities\n[Peer review, seminar organising, CDT cohort roles, committee membership, outreach.]\n\nReferences available on request."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Rob Furze",
@@ -95,7 +165,7 @@
     "href": "index.html#contact",
     "title": "Rob Furze",
     "section": "Contact",
-    "text": "Contact\n\nEmail ORCID GitHub"
+    "text": "Contact\n\nEmail ORCID GitHub CV"
   },
   {
     "objectID": "methods/generic-1d-hmm.html",
