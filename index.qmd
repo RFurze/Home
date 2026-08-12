@@ -34,7 +34,6 @@ opened and run in the browser via Colab or Binder, or downloaded as a notebook.
 
 ::: {.contact}
 [Email](mailto:py07rf@leeds.com)
-[Google Scholar](https://scholar.google.com/)
 [ORCID](https://orcid.org/0009-0008-6692-4982/)
 [GitHub](https://github.com/RFurze)
 :::
