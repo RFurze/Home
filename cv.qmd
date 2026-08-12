@@ -1,6 +1,6 @@
 ---
 title: "CV"
-subtitle: "Robin (Rob) Furze — multiscale computational tribology, University of Leeds."
+subtitle: "Robin (Rob) Furze - multiscale computational tribology, University of Leeds."
 toc: true
 toc-depth: 2
 ---
@@ -8,7 +8,7 @@ toc-depth: 2
 <!--
   Entry shape:
     ::: {.cv-entry}
-    ::: {.cv-when}   2022 — 2026   :::
+    ::: {.cv-when}   2022 - 2026   :::
     ::: {.cv-what}
     **Title**
     [Institution]{.cv-where}
@@ -36,7 +36,7 @@ MSc in Medical Engineering, and am now finishing a PhD in the EPSRC Centre for
 Doctoral Training in Fluid Dynamics at the University of Leeds.
 
 The PhD develops novel multiscale computational tools to predict friction and
-lubrication in total hip replacement bearings — coupling microscale surface
+lubrication in total hip replacement bearings - coupling microscale surface
 physics to full-joint elastohydrodynamic simulation via the Heterogeneous
 Multiscale Method, implemented in FEniCS and NGSolve with HPC parameter studies.
 It is supervised across computer science, mechanical engineering and industry,
@@ -55,13 +55,13 @@ collaboration with the clinicians and manufacturers who use it.
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2022 — 2027
+2022 - 2027
 :::
 ::: {.cv-what}
 **PhD, Fluid Dynamics**
 [EPSRC CDT in Fluid Dynamics, School of Computer Science, University of Leeds]{.cv-where}
 
-Thesis: *Predicting Friction in Total Hip Replacement Bearings* — multiscale
+Thesis: *Predicting Friction in Total Hip Replacement Bearings* - multiscale
 computational prediction of friction and lubrication in total hip replacement
 bearings. Expected completion March 2027.
 
@@ -75,7 +75,7 @@ Johnson & Johnson MedTech).
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2021 — 2022
+2021 - 2022
 :::
 ::: {.cv-what}
 **MSc, Medical Engineering**
@@ -87,13 +87,13 @@ Project: *Design of a Rapid Microfluidic Mixer to Enable to Study of Nanoparticl
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2007 — 2011
+2007 - 2011
 :::
 ::: {.cv-what}
 **MPhys & BSc, Theoretical Physics (First Class Honours)**
 [University of Leeds]{.cv-where}
 
-MPhys project: *Proteins in flow fields* — the effect of flow on proteins
+MPhys project: *Proteins in flow fields* - the effect of flow on proteins
 responsible for haemostasis, and its medical implications.
 :::
 :::
@@ -103,13 +103,13 @@ responsible for haemostasis, and its medical implications.
 ## Professional experience
 
 Ten years as a Chartered Accountant, working across aerospace, manufacturing and
-professional services on complex financial and operational problems — root-cause
+professional services on complex financial and operational problems - root-cause
 investigation, system design and implementation, financial modelling, and
 training finance teams.
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2015 — 2021
+2015 - 2021
 :::
 ::: {.cv-what}
 **Special Projects Manager**
@@ -124,7 +124,7 @@ and project plan through delivery to deadline.
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2011 — 2015
+2011 - 2015
 :::
 ::: {.cv-what}
 **Audit & Accounts Senior (ACA)**
@@ -139,7 +139,7 @@ transition to FRS 102.
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2011 — 2014
+2011 - 2014
 :::
 ::: {.cv-what}
 **ACA, Chartered Accountant**
@@ -188,7 +188,7 @@ loading and velocity profiles.
 2026
 :::
 ::: {.cv-what}
-**rfurze.co.uk — multiscale methods for lubrication**
+**rfurze.co.uk - multiscale methods for lubrication**
 [Runnable notebooks: HMM, microscale cell problems, macro/micro coupling]{.cv-where}
 
 Open-source demonstration and teaching code (MIT / CC BY 4.0).
@@ -202,7 +202,7 @@ Open-source demonstration and teaching code (MIT / CC BY 4.0).
 :::
 ::: {.cv-what}
 **HMM Workshop**
-[Montgomery, Furze, Baxter-Chapman & de Boer — University of Leeds]{.cv-where}
+[Montgomery, Furze, Baxter-Chapman & de Boer - University of Leeds]{.cv-where}
 
 Workshop materials on the Heterogeneous Multiscale Method.
 [doi:10.5281/zenodo.21834798](https://doi.org/10.5281/zenodo.21834798)
@@ -256,10 +256,10 @@ Poster presentation.
 
 ::: {.cv-entry}
 ::: {.cv-when}
-2024 — 2025
+2024 - 2025
 :::
 ::: {.cv-what}
-**Demonstrator — Engineering Computational Methods (MSc)**
+**Demonstrator - Engineering Computational Methods (MSc)**
 [University of Leeds]{.cv-where}
 
 Laboratory demonstrating on a master's-level computational methods module.
@@ -270,14 +270,14 @@ Laboratory demonstrating on a master's-level computational methods module.
 
 ## Technical skills
 
-**Numerical methods** — finite element method, homogenisation, the Heterogeneous
+**Numerical methods** - finite element method, homogenisation, the Heterogeneous
 Multiscale Method, transient elastohydrodynamic lubrication, the Reynolds
 equation, cavitation modelling, fluid–structure coupling.
 
-**Scientific computing** — Python, FEniCS, NGSolve, PETSc, MATLAB, C/C++.
+**Scientific computing** - Python, FEniCS, NGSolve, PETSc, MATLAB, C/C++.
 HPC parameter studies.
 
-**Professional** — project and stakeholder management, financial modelling,
+**Professional** - project and stakeholder management, financial modelling,
 technical communication to non-specialist audiences.
 
 
