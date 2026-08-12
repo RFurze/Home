@@ -33,7 +33,9 @@ website:
   page-footer:
     border: true
     left: "© 2026 Rob Furze"
-    center: "Code [MIT](licence.qmd) · Text & figures [CC BY 4.0](licence.qmd)"
+    center:
+      - text: "Code MIT · Text & figures CC BY 4.0"
+        href: licence.qmd
     right: "Built with [Quarto](https://quarto.org)."
 
 format:
