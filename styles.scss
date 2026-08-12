@@ -76,6 +76,52 @@ $hairline: #E3E8EB;
 
 .contact a { margin-right: 1.1rem; font-weight: 600; }
 
+/* ---- CV page ---------------------------------------------------------- */
+
+// Unfilled CV placeholders. Deliberately loud so nothing ships half-written —
+// once the page is complete, delete this rule and every [.todo] span with it.
+.todo {
+  background: #FFF3CD;
+  border-bottom: 2px dotted #B8860B;
+  color: #6B4E00;
+  padding: 0 .18em;
+  font-style: italic;
+}
+
+// Entry = one row of the CV: dates on the left, detail on the right.
+.cv-entry {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0 1.4rem;
+  padding: .85rem 0;
+  border-bottom: 1px solid $hairline;
+}
+.cv-entry:last-child { border-bottom: 0; }
+.cv-entry .cv-when {
+  font-family: $font-family-monospace;
+  font-size: .82rem;
+  color: $steel;
+  padding-top: .2rem;
+  letter-spacing: .01em;
+}
+.cv-entry .cv-what { margin: 0; }
+.cv-entry .cv-what strong { display: block; font-size: 1.02rem; }
+.cv-entry .cv-what .cv-where { color: $steel; font-size: .95rem; }
+.cv-entry .cv-what p { margin: .35rem 0 0; font-size: .95rem; }
+
+@media (max-width: 620px) {
+  .cv-entry { grid-template-columns: 1fr; gap: .25rem; }
+  .cv-entry .cv-when { padding-top: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+}
+
+/* Print: strip the site chrome so ⌘P on the CV page gives a clean document. */
+@media print {
+  .navbar, .page-footer, #quarto-margin-sidebar, .toc, .btn-accent { display: none !important; }
+  body { font-size: 10.5pt; }
+  .cv-entry { break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; color: #555; }
 }

@@ -33,7 +33,8 @@ opened and run in the browser via Colab or Binder, or downloaded as a notebook.
 ## Contact
 
 ::: {.contact}
-[Email](mailto:py07rf@leeds.com)
-[ORCID](https://orcid.org/0009-0008-6692-4982/)
+[Email](mailto:py07rf@leeds.ac.uk)
+[ORCID](https://orcid.org/0009-0008-6692-4982)
 [GitHub](https://github.com/RFurze)
+[CV](cv.qmd)
 :::
