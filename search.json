@@ -74,7 +74,7 @@
     "href": "licence.html#third-party-material",
     "title": "Licence & reuse",
     "section": "Third-party material",
-    "text": "Third-party material\nSome of the HMM material here builds on ideas developed with colleagues in the HMM Workshop (Montgomery, Furze, Baxter-Chapman & de Boer, University of Leeds; doi:10.5281/zenodo.21834798), itself released under MIT and CC BY 4.0. The scientific libraries used — FEniCS, NGSolve, PETSc and others — remain under their own licences, as do any externally sourced figures, which are credited where they appear."
+    "text": "Third-party material\nSome of the HMM material here forms part of a workshop developed with colleagues in the HMM Workshop (Montgomery, Furze, Baxter-Chapman & de Boer, University of Leeds; doi:10.5281/zenodo.21834798), itself released under MIT and CC BY 4.0. The scientific libraries used — FEniCS, NGSolve, PETSc and others — remain under their own licences, as do any externally sourced figures, which are credited where they appear."
   },
   {
     "objectID": "index.html",
