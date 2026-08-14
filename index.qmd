@@ -23,7 +23,7 @@ full-joint elastohydrodynamic simulation.
 ::: {.hero-card}
 [contact]{.eyebrow}
 
-[py07rf@leeds.ac.uk](mailto:py07rf@leeds.ac.uk){.hc-email}
+[Email](mailto:py07rf@leeds.ac.uk){.hc-email}
 
 [Curriculum vitae](cv.qmd)
 [ORCID 0009-0008-6692-4982](https://orcid.org/0009-0008-6692-4982)

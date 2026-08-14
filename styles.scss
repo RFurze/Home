@@ -78,13 +78,10 @@ $hairline: #E3E8EB;
   a:hover { text-decoration: underline; }
 }
 
-// The email is the thing most visitors want, so it gets the address in full
-// rather than a "Email" label — readable, copyable, and typeable off a phone.
+// Email is the most-wanted item, so it sits first and slightly larger, with a
+// rule beneath separating it from the secondary links.
 .hero-card .hc-email {
-  font-family: $font-family-monospace;
-  font-size: .95rem;
-  font-weight: 500;
-  word-break: break-word;
+  font-size: 1.02rem;
   padding-bottom: .55rem;
   margin-bottom: .2rem;
   border-bottom: 1px solid $hairline;   // keep the rule under the address even
