@@ -151,21 +151,14 @@
     "href": "index.html",
     "title": "Robin Furze",
     "section": "",
-    "text": "multiscale methods · elastohydrodynamic lubrication\n\n\nI build multiscale computational tools that predict friction and lubrication in artificial hip-joint bearings — coupling microscale surface physics to full-joint elastohydrodynamic simulation.\nPhD researcher · EPSRC CDT in Fluid Dynamics · University of Leeds\nMethods & code →    Read the research\noverview"
+    "text": "multiscale methods · elastohydrodynamic lubrication\n\n\nI build multiscale computational tools that predict friction and lubrication in artificial hip-joint bearings — coupling microscale surface physics to full-joint elastohydrodynamic simulation.\nPhD researcher · EPSRC CDT in Fluid Dynamics · University of Leeds\nMethods & code →    Read the research\n\n\n\ncontact\npy07rf@leeds.ac.uk\nCurriculum vitae ORCID 0009-0008-6692-4982 GitHub · RFurze\noverview"
   },
   {
     "objectID": "index.html#what-youll-find-here",
     "href": "index.html#what-youll-find-here",
     "title": "Robin Furze",
     "section": "What you’ll find here",
-    "text": "What you’ll find here\nThe methods section collects runnable notebooks that demonstrate the numerical machinery behind the research — the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the macro/micro coupling that drives the full lubrication model. Each one can be opened and run in the browser via Colab or Binder, or downloaded as a notebook.\ncontact"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Robin Furze",
-    "section": "Contact",
-    "text": "Contact\n\nEmail ORCID GitHub CV"
+    "text": "What you’ll find here\nThe methods section collects runnable notebooks that demonstrate the numerical machinery behind the research — the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the macro/micro coupling that drives the full lubrication model. Each one can be opened and run in the browser via Colab or Binder, or downloaded as a notebook."
   },
   {
     "objectID": "methods/generic-1d-hmm.html",
