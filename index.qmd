@@ -24,7 +24,6 @@ full-joint elastohydrodynamic simulation.
 [contact]{.eyebrow}
 
 [Email](mailto:py07rf@leeds.ac.uk){.hc-email}
-
 [Curriculum vitae](cv.qmd)
 [ORCID 0009-0008-6692-4982](https://orcid.org/0009-0008-6692-4982)
 [GitHub · RFurze](https://github.com/RFurze)
