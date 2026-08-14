@@ -1,6 +1,6 @@
 ---
 title: "CV"
-subtitle: "Robin (Rob) Furze - multiscale computational tribology, University of Leeds."
+subtitle: "Robin Furze - multiscale computational tribology, University of Leeds."
 toc: true
 toc-depth: 2
 ---

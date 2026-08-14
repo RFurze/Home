@@ -7,7 +7,7 @@ page-layout: article
 ::: {.hero}
 [multiscale methods · elastohydrodynamic lubrication]{.eyebrow}
 
-# Rob Furze {.hero-name}
+# Robin Furze {.hero-name}
 
 I build multiscale computational tools that predict friction and lubrication in
 artificial hip-joint bearings — coupling microscale surface physics to
