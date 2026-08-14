@@ -124,6 +124,23 @@ $hairline: #E3E8EB;
 
 .contact a { margin-right: 1.1rem; font-weight: 600; }
 
+// Hanging-indent reference list for the software citations on method pages.
+.refs {
+  font-size: .93rem;
+  line-height: 1.5;
+  color: $steel;
+  border-left: 2px solid $hairline;
+  padding-left: 1rem;
+  margin: 1rem 0 1.6rem;
+
+  p {
+    margin: 0 0 .7rem;
+    padding-left: 1.4rem;
+    text-indent: -1.4rem;
+  }
+  p:last-child { margin-bottom: 0; }
+}
+
 /* ---- CV page ---------------------------------------------------------- */
 
 // Unfilled CV placeholders. Deliberately loud so nothing ships half-written —

@@ -39,23 +39,42 @@ The finite-element solves use NGSolve.
 
 ::: {.callout-tip collapse="true"}
 ## Running it yourself
-**Colab** is the route to use here — the notebook's first cell installs NGSolve
-automatically (via fem-on-colab) on a real cloud kernel.
+Open in Colab and run all cells — the notebook's first cell installs NGSolve
+automatically via [FEM on Colab](https://fem-on-colab.github.io/) on a real
+cloud kernel.
 
 One dependency to wire up first: the notebook imports a local helper module with
 `from plot_funcs import *`. Opening the notebook in Colab loads only the
 `.ipynb`, not the rest of the repo, so that import will fail until `plot_funcs.py`
 is made available — either by adding a setup cell that fetches it
 (`!wget <raw-github-url>/plot_funcs.py`) or by pasting its contents into the
-notebook. (Binder isn't offered for this one: the repo's shared Binder
-environment targets the FEniCS notebooks, whereas this one self-installs NGSolve
-on Colab.)
+notebook.
 :::
 
 The full notebook is embedded below (install cell and console logs trimmed for
 reading; the runnable version is linked above).
 
 {{< embed ../_display/1DLubrication_NGSolve.ipynb echo=true >}}
+
+[software]{.eyebrow}
+
+## Software & citations
+
+This notebook is built on NGSolve/Netgen, run on Google Colab through FEM on
+Colab. If you use it in your own work, please cite them:
+
+::: {.refs}
+J. Schöberl. *C++11 Implementation of Finite Elements in NGSolve.* ASC Report
+30/2014, Institute for Analysis and Scientific Computing, TU Wien (2014).
+[asc.tuwien.ac.at](https://www.asc.tuwien.ac.at/~schoeberl/wiki/publications/ngscpp11.pdf)
+
+J. Schöberl. *NETGEN — An advancing front 2D/3D-mesh generator based on abstract
+rules.* Computing and Visualization in Science **1**(1):41–52 (1997).
+[doi:10.1007/s007910050004](https://doi.org/10.1007/s007910050004)
+
+F. Ballarin et al. *FEM on Colab.*
+[fem-on-colab.github.io](https://fem-on-colab.github.io/)
+:::
 
 ::: {.callout-note appearance="simple"}
 ## Reuse

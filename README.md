@@ -6,8 +6,8 @@ artificial hip-joint bearings.
 
 The [Methods & code](https://rfurze.co.uk/methods/) section collects runnable
 notebooks demonstrating the Heterogeneous Multiscale Method (HMM), microscale
-cell problems, and macro/micro coupling. Each can be opened in Colab or Binder,
-or downloaded.
+cell problems, and macro/micro coupling. Each can be opened in Colab or
+downloaded.
 
 ## Building
 
@@ -22,13 +22,27 @@ To build locally:
 quarto render
 ```
 
+### Gotcha: `$'` in embedded notebooks
+
+Avoid Python string literals that end with `$` and are closed with a single
+quote — e.g. `ax.set_ylabel(r'$\Gamma$')`. Use double quotes instead:
+`ax.set_ylabel(r"$\Gamma$")`.
+
+Quarto's `{{< embed >}}` passes notebook source through JavaScript's
+`String.replaceAll()`, where `$'` in the replacement is a special pattern
+meaning "everything after the match". A single such literal makes Quarto splice
+the rest of the page into the code block, repeatedly — the page renders
+corrupted, and once the notebook is large enough the build dies with
+`RangeError: Invalid string length`. LaTeX in matplotlib labels is the usual
+source.
+
 ## Licence
 
 This repository is dual-licensed.
 
 - **Code** — everything in `notebooks/`, `_display/`, all code cells within
   `.ipynb` files, and the site's build configuration and styling
-  (`_quarto.yml`, `styles.scss`, `binder/`, workflow files) is licensed under
+  (`_quarto.yml`, `styles.scss`, workflow files) is licensed under
   the **[MIT License](LICENSE-code)**.
 - **Written and teaching materials** — the prose, mathematical exposition,
   figures, images and other non-code content of the `.qmd` pages and the

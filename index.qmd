@@ -40,4 +40,4 @@ The [methods](methods/index.qmd) section collects runnable notebooks that
 demonstrate the numerical machinery behind the research —
 the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the
 macro/micro coupling that drives the full lubrication model. Each one can be
-opened and run in the browser via Colab or Binder, or downloaded as a notebook.
+opened and run in the browser via Colab, or downloaded as a notebook.

@@ -28,23 +28,45 @@ fraction of the cost.
 
 ::: {.launch}
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/{{< var github.user >}}/{{< var github.repo >}}/blob/{{< var github.branch >}}/notebooks/Generic1DHMM_FEniCS2.ipynb)
-[![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/{{< var github.user >}}/{{< var github.repo >}}/{{< var github.branch >}}?labpath=notebooks/Generic1DHMM_FEniCS2.ipynb)
 [Download notebook (.ipynb)](../notebooks/Generic1DHMM_FEniCS2.ipynb){download="Generic1DHMM_FEniCS2.ipynb"}
 :::
 
 ::: {.callout-tip collapse="true"}
 ## Running it yourself
-**Colab** is the smoothest route — the notebook's first cell installs FEniCS
-automatically (via fem-on-colab) on a real cloud kernel; just run all cells.
-**Binder** builds the environment from `binder/environment.yml` and needs no
-login, but the legacy-FEniCS image is heavy, so the first launch can take
-several minutes while it builds.
+Open in Colab and run all cells — the notebook's first cell installs legacy
+FEniCS automatically via [FEM on Colab](https://fem-on-colab.github.io/) on a
+real cloud kernel, so there is nothing to set up locally.
 :::
 
 The full notebook is embedded below (install cell and console logs trimmed for
 reading; the runnable version is linked above).
 
 {{< embed ../_display/Generic1DHMM_FEniCS2.ipynb echo=true >}}
+
+[software]{.eyebrow}
+
+## Software & citations
+
+This notebook is built on legacy FEniCS, run on Google Colab through FEM on
+Colab. If you use it in your own work, please cite them:
+
+::: {.refs}
+A. Logg, K.-A. Mardal, G. N. Wells et al. *Automated Solution of Differential
+Equations by the Finite Element Method.* Springer (2012).
+[doi:10.1007/978-3-642-23099-8](https://doi.org/10.1007/978-3-642-23099-8)
+
+M. S. Alnæs, J. Blechta, J. Hake, A. Johansson, B. Kehlet, A. Logg,
+C. Richardson, J. Ring, M. E. Rognes and G. N. Wells. *The FEniCS Project
+Version 1.5.* Archive of Numerical Software **3** (2015).
+[doi:10.11588/ans.2015.100.20553](https://doi.org/10.11588/ans.2015.100.20553)
+
+A. Logg and G. N. Wells. *DOLFIN: Automated Finite Element Computing.*
+ACM Transactions on Mathematical Software **37** (2010).
+[doi:10.1145/1731022.1731030](https://doi.org/10.1145/1731022.1731030)
+
+F. Ballarin et al. *FEM on Colab.*
+[fem-on-colab.github.io](https://fem-on-colab.github.io/)
+:::
 
 ::: {.callout-note appearance="simple"}
 ## Reuse
