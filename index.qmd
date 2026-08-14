@@ -5,6 +5,8 @@ page-layout: article
 ---
 
 ::: {.hero}
+
+::: {.hero-main}
 [multiscale methods · elastohydrodynamic lubrication]{.eyebrow}
 
 # Robin Furze {.hero-name}
@@ -18,6 +20,18 @@ full-joint elastohydrodynamic simulation.
 [Methods & code →](methods/index.qmd){.btn-accent} &nbsp;&nbsp; [Read the research](research.qmd)
 :::
 
+::: {.hero-card}
+[contact]{.eyebrow}
+
+[py07rf@leeds.ac.uk](mailto:py07rf@leeds.ac.uk){.hc-email}
+
+[Curriculum vitae](cv.qmd)
+[ORCID 0009-0008-6692-4982](https://orcid.org/0009-0008-6692-4982)
+[GitHub · RFurze](https://github.com/RFurze)
+:::
+
+:::
+
 [overview]{.eyebrow}
 
 ## What you'll find here
@@ -27,14 +41,3 @@ demonstrate the numerical machinery behind the research —
 the Heterogeneous Multiscale Method (HMM), microscale cell problems, and the
 macro/micro coupling that drives the full lubrication model. Each one can be
 opened and run in the browser via Colab or Binder, or downloaded as a notebook.
-
-[contact]{.eyebrow}
-
-## Contact
-
-::: {.contact}
-[Email](mailto:py07rf@leeds.ac.uk)
-[ORCID](https://orcid.org/0009-0008-6692-4982)
-[GitHub](https://github.com/RFurze)
-[CV](cv.qmd)
-:::
