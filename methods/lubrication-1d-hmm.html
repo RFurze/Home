@@ -82,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1f2a58b97f9a9569792e71b24e5c99f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-52772ebf02253b7bad984e19dc16628a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -217,8 +217,14 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="../_display/1DLubrication_NGSolve-preview.html"><i class="bi bi-journal-code"></i>1DLubrication_NGSolve.ipynb</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#software-citations" id="toc-software-citations" class="nav-link active" data-scroll-target="#software-citations">Software &amp; citations</a></li>
+  </ul>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="../_display/1DLubrication_NGSolve-preview.html"><i class="bi bi-journal-code"></i>1DLubrication_NGSolve.ipynb</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -280,8 +286,8 @@ q = \frac{U\,H(x)}{2} \;-\; \frac{H^{3}(x)}{12\,\eta}\,\nabla P,
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Colab</strong> is the route to use here — the notebook’s first cell installs NGSolve automatically (via fem-on-colab) on a real cloud kernel.</p>
-<p>One dependency to wire up first: the notebook imports a local helper module with <code>from plot_funcs import *</code>. Opening the notebook in Colab loads only the <code>.ipynb</code>, not the rest of the repo, so that import will fail until <code>plot_funcs.py</code> is made available — either by adding a setup cell that fetches it (<code>!wget &lt;raw-github-url&gt;/plot_funcs.py</code>) or by pasting its contents into the notebook. (Binder isn’t offered for this one: the repo’s shared Binder environment targets the FEniCS notebooks, whereas this one self-installs NGSolve on Colab.)</p>
+<p>Open in Colab and run all cells — the notebook’s first cell installs NGSolve automatically via <a href="https://fem-on-colab.github.io/">FEM on Colab</a> on a real cloud kernel.</p>
+<p>One dependency to wire up first: the notebook imports a local helper module with <code>from plot_funcs import *</code>. Opening the notebook in Colab loads only the <code>.ipynb</code>, not the rest of the repo, so that import will fail until <code>plot_funcs.py</code> is made available — either by adding a setup cell that fetches it (<code>!wget &lt;raw-github-url&gt;/plot_funcs.py</code>) or by pasting its contents into the notebook.</p>
 </div>
 </div>
 </div>
@@ -589,6 +595,15 @@ q = \frac{UH(x)}{2} - \frac{H^3(x)}{12 \eta}\nabla P
 </div>
 </div>
 <a class="quarto-notebook-link" id="nblink-1" href="../_display/1DLubrication_NGSolve-preview.html#cell-0">Source: 1DLubrication_NGSolve.ipynb</a></div>
+<p><span class="eyebrow">software</span></p>
+<section id="software-citations" class="level2">
+<h2 class="anchored" data-anchor-id="software-citations">Software &amp; citations</h2>
+<p>This notebook is built on NGSolve/Netgen, run on Google Colab through FEM on Colab. If you use it in your own work, please cite them:</p>
+<div class="refs">
+<p>J. Schöberl. <em>C++11 Implementation of Finite Elements in NGSolve.</em> ASC Report 30/2014, Institute for Analysis and Scientific Computing, TU Wien (2014). <a href="https://www.asc.tuwien.ac.at/~schoeberl/wiki/publications/ngscpp11.pdf">asc.tuwien.ac.at</a></p>
+<p>J. Schöberl. <em>NETGEN — An advancing front 2D/3D-mesh generator based on abstract rules.</em> Computing and Visualization in Science <strong>1</strong>(1):41–52 (1997). <a href="https://doi.org/10.1007/s007910050004">doi:10.1007/s007910050004</a></p>
+<p>F. Ballarin et al.&nbsp;<em>FEM on Colab.</em> <a href="https://fem-on-colab.github.io/">fem-on-colab.github.io</a></p>
+</div>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -604,6 +619,7 @@ q = \frac{UH(x)}{2} - \frac{H^3(x)}{12 \eta}\nabla P
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

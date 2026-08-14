@@ -82,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1f2a58b97f9a9569792e71b24e5c99f5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-52772ebf02253b7bad984e19dc16628a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -222,6 +222,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#heterogeneous-multiscale-methods-hmm-demonstration" id="toc-heterogeneous-multiscale-methods-hmm-demonstration" class="nav-link active" data-scroll-target="#heterogeneous-multiscale-methods-hmm-demonstration">Heterogeneous Multiscale Methods (HMM) Demonstration</a></li>
+  <li><a href="#software-citations" id="toc-software-citations" class="nav-link" data-scroll-target="#software-citations">Software &amp; citations</a></li>
   </ul>
 <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="../_display/Generic1DHMM_FEniCS2-preview.html"><i class="bi bi-journal-code"></i>Heterogeneous Multiscale Methods (HMM) Demonstration</a></li></ul></div></nav>
     </div>
@@ -270,7 +271,7 @@ window.Quarto = {
 \]</span></p>
 <p>where the coefficient <span class="math inline">\(\Gamma\)</span> carries a fast microscale oscillation <span class="math inline">\(H = H_0(X) + H_1(x/\lambda,\phi)\)</span>. Three scenarios are compared: a <strong>smooth</strong> macro solve using only <span class="math inline">\(H_0\)</span>; a <strong>fine-resolved</strong> deterministic solve that resolves every microscale wiggle; and the <strong>HMM</strong> solve, where micro cell problems supply effective <span class="math inline">\(\bar\Gamma\)</span> and <span class="math inline">\(\bar f\)</span> that correct a coarse macro solve. The HMM result should track the expensive fine-resolved reference at a fraction of the cost.</p>
 <div class="launch">
-<p><a href="https://colab.research.google.com/github/RFurze/Home/blob/main/notebooks/Generic1DHMM_FEniCS2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open in Colab"></a> <a href="https://mybinder.org/v2/gh/RFurze/Home/main?labpath=notebooks/Generic1DHMM_FEniCS2.ipynb"><img src="https://mybinder.org/badge_logo.svg" class="img-fluid" alt="Launch in Binder"></a> <a href="../notebooks/Generic1DHMM_FEniCS2.ipynb" download="Generic1DHMM_FEniCS2.ipynb">Download notebook (.ipynb)</a></p>
+<p><a href="https://colab.research.google.com/github/RFurze/Home/blob/main/notebooks/Generic1DHMM_FEniCS2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid" alt="Open in Colab"></a> <a href="../notebooks/Generic1DHMM_FEniCS2.ipynb" download="Generic1DHMM_FEniCS2.ipynb">Download notebook (.ipynb)</a></p>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -284,7 +285,7 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Colab</strong> is the smoothest route — the notebook’s first cell installs FEniCS automatically (via fem-on-colab) on a real cloud kernel; just run all cells. <strong>Binder</strong> builds the environment from <code>binder/environment.yml</code> and needs no login, but the legacy-FEniCS image is heavy, so the first launch can take several minutes while it builds.</p>
+<p>Open in Colab and run all cells — the notebook’s first cell installs legacy FEniCS automatically via <a href="https://fem-on-colab.github.io/">FEM on Colab</a> on a real cloud kernel, so there is nothing to set up locally.</p>
 </div>
 </div>
 </div>
@@ -437,7 +438,7 @@ window.Quarto = {
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>coords_s, vals_s <span class="op">=</span> smooth_data</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">4</span>))</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>ax.plot(coords_s, vals_s, <span class="st">'r-'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="vs">r'Smooth macro </span><span class="dv">$</span><span class="vs">Y</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs"> with </span><span class="dv">$\G</span><span class="vs">amma</span><span class="kw">(</span><span class="vs">H_0</span><span class="kw">)</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>ax.plot(coords_s, vals_s, <span class="st">'r-'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, label<span class="op">=</span><span class="vs">r"Smooth macro </span><span class="dv">$</span><span class="vs">Y</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs"> with </span><span class="dv">$\G</span><span class="vs">amma</span><span class="kw">(</span><span class="vs">H_0</span><span class="kw">)</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Y(X)'</span>)</span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Scenario 1: Smooth Macroscale Solution'</span>)</span>
@@ -810,7 +811,7 @@ window.Quarto = {
 <span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>    ax.plot(mc, my, <span class="st">'g-'</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    ax.axhline(y<span class="op">=</span>vals_hmm[mi], color<span class="op">=</span><span class="st">'r'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>,</span>
-<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>               linewidth<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">'$Y_</span><span class="sc">{macro}</span><span class="st">$'</span> <span class="cf">if</span> ax_idx <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="va">None</span>)</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>               linewidth<span class="op">=</span><span class="dv">1</span>, label<span class="op">=</span><span class="st">"$Y_</span><span class="sc">{macro}</span><span class="st">$"</span> <span class="cf">if</span> ax_idx <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> <span class="va">None</span>)</span>
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f'X = </span><span class="sc">{</span>X_node<span class="sc">:.3f}</span><span class="ss">'</span>, fontsize<span class="op">=</span><span class="dv">9</span>)</span>
 <span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">'x (global)'</span>, fontsize<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>    ax.tick_params(labelsize<span class="op">=</span><span class="dv">7</span>)</span>
@@ -942,7 +943,7 @@ window.Quarto = {
 <span id="cb15-91"><a href="#cb15-91" aria-hidden="true" tabindex="-1"></a>ax.plot(x_nodes, Gamma_bar, <span class="st">'go'</span>, markersize<span class="op">=</span><span class="dv">6</span>, zorder<span class="op">=</span><span class="dv">5</span>,</span>
 <span id="cb15-92"><a href="#cb15-92" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="vs">r'</span><span class="dv">$\G</span><span class="vs">amma_0 </span><span class="op">+</span><span class="vs"> </span><span class="dv">\D</span><span class="vs">elta</span><span class="dv">\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs"> </span><span class="kw">(</span><span class="vs">HMM</span><span class="kw">)</span><span class="vs">'</span>)</span>
 <span id="cb15-93"><a href="#cb15-93" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
-<span id="cb15-94"><a href="#cb15-94" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r'</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb15-94"><a href="#cb15-94" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb15-95"><a href="#cb15-95" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r'</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs"> Comparison'</span>)</span>
 <span id="cb15-96"><a href="#cb15-96" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">9</span>)</span>
 <span id="cb15-97"><a href="#cb15-97" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
@@ -972,7 +973,7 @@ window.Quarto = {
 <span id="cb15-121"><a href="#cb15-121" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(ZOOM_LEFT, ZOOM_RIGHT)</span>
 <span id="cb15-122"><a href="#cb15-122" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(c_lo <span class="op">-</span> c_pad, c_hi <span class="op">+</span> c_pad)</span>
 <span id="cb15-123"><a href="#cb15-123" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
-<span id="cb15-124"><a href="#cb15-124" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r'</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb15-124"><a href="#cb15-124" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb15-125"><a href="#cb15-125" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r'</span><span class="dv">$\G</span><span class="vs">amma</span><span class="dv">$</span><span class="vs"> Comparison </span><span class="kw">(</span><span class="vs">zoom: X in '</span></span>
 <span id="cb15-126"><a href="#cb15-126" aria-hidden="true" tabindex="-1"></a>             <span class="ss">f'[</span><span class="sc">{</span>ZOOM_LEFT<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>ZOOM_RIGHT<span class="sc">}</span><span class="ss">])'</span>)</span>
 <span id="cb15-127"><a href="#cb15-127" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">8</span>)</span>
@@ -1033,8 +1034,8 @@ window.Quarto = {
 <span id="cb15-182"><a href="#cb15-182" aria-hidden="true" tabindex="-1"></a>ax.plot(x_nodes, Delta_Gamma, <span class="st">'m-o'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, markersize<span class="op">=</span><span class="dv">4</span>)</span>
 <span id="cb15-183"><a href="#cb15-183" aria-hidden="true" tabindex="-1"></a>ax.axhline(y<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb15-184"><a href="#cb15-184" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
-<span id="cb15-185"><a href="#cb15-185" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r'</span><span class="dv">$\D</span><span class="vs">elta</span><span class="dv">\G</span><span class="vs">amma</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs">'</span>)</span>
-<span id="cb15-186"><a href="#cb15-186" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r'Micro Correction </span><span class="dv">$\D</span><span class="vs">elta</span><span class="dv">\G</span><span class="vs">amma = </span><span class="dv">\b</span><span class="vs">ar{</span><span class="dv">\G</span><span class="vs">amma} - </span><span class="dv">\G</span><span class="vs">amma_0</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb15-185"><a href="#cb15-185" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"</span><span class="dv">$\D</span><span class="vs">elta</span><span class="dv">\G</span><span class="vs">amma</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs">"</span>)</span>
+<span id="cb15-186"><a href="#cb15-186" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r"Micro Correction </span><span class="dv">$\D</span><span class="vs">elta</span><span class="dv">\G</span><span class="vs">amma = </span><span class="dv">\b</span><span class="vs">ar{</span><span class="dv">\G</span><span class="vs">amma} - </span><span class="dv">\G</span><span class="vs">amma_0</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb15-187"><a href="#cb15-187" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
 <span id="cb15-188"><a href="#cb15-188" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-189"><a href="#cb15-189" aria-hidden="true" tabindex="-1"></a><span class="co"># ================================================================</span></span>
@@ -1044,8 +1045,8 @@ window.Quarto = {
 <span id="cb15-193"><a href="#cb15-193" aria-hidden="true" tabindex="-1"></a>ax.plot(x_nodes, Delta_f, <span class="st">'c-o'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, markersize<span class="op">=</span><span class="dv">4</span>)</span>
 <span id="cb15-194"><a href="#cb15-194" aria-hidden="true" tabindex="-1"></a>ax.axhline(y<span class="op">=</span><span class="dv">0</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
 <span id="cb15-195"><a href="#cb15-195" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
-<span id="cb15-196"><a href="#cb15-196" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r'</span><span class="dv">$\D</span><span class="vs">elta f</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs">'</span>)</span>
-<span id="cb15-197"><a href="#cb15-197" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r'Micro Correction </span><span class="dv">$\D</span><span class="vs">elta f = </span><span class="dv">\b</span><span class="vs">ar{f} - f_0</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb15-196"><a href="#cb15-196" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"</span><span class="dv">$\D</span><span class="vs">elta f</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs">"</span>)</span>
+<span id="cb15-197"><a href="#cb15-197" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r"Micro Correction </span><span class="dv">$\D</span><span class="vs">elta f = </span><span class="dv">\b</span><span class="vs">ar{f} - f_0</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb15-198"><a href="#cb15-198" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
 <span id="cb15-199"><a href="#cb15-199" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-200"><a href="#cb15-200" aria-hidden="true" tabindex="-1"></a><span class="co"># ================================================================</span></span>
@@ -1071,8 +1072,8 @@ window.Quarto = {
 <span id="cb15-220"><a href="#cb15-220" aria-hidden="true" tabindex="-1"></a>ax.plot(x_nodes, f_smooth_at_nodes, <span class="st">'k--'</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>,</span>
 <span id="cb15-221"><a href="#cb15-221" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span><span class="vs">r'</span><span class="dv">$</span><span class="vs">f_0</span><span class="kw">(</span><span class="vs">X</span><span class="kw">)</span><span class="dv">$</span><span class="vs"> macro'</span>)</span>
 <span id="cb15-222"><a href="#cb15-222" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">'X'</span>)</span>
-<span id="cb15-223"><a href="#cb15-223" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r'</span><span class="dv">$</span><span class="vs">f</span><span class="dv">$</span><span class="vs">'</span>)</span>
-<span id="cb15-224"><a href="#cb15-224" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r'Source Term: </span><span class="dv">$</span><span class="vs">f_0</span><span class="dv">$</span><span class="vs"> vs </span><span class="dv">$</span><span class="vs">f_0 </span><span class="op">+</span><span class="vs"> </span><span class="dv">\D</span><span class="vs">elta f</span><span class="dv">$</span><span class="vs">'</span>)</span>
+<span id="cb15-223"><a href="#cb15-223" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="vs">r"</span><span class="dv">$</span><span class="vs">f</span><span class="dv">$</span><span class="vs">"</span>)</span>
+<span id="cb15-224"><a href="#cb15-224" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="vs">r"Source Term: </span><span class="dv">$</span><span class="vs">f_0</span><span class="dv">$</span><span class="vs"> vs </span><span class="dv">$</span><span class="vs">f_0 </span><span class="op">+</span><span class="vs"> </span><span class="dv">\D</span><span class="vs">elta f</span><span class="dv">$</span><span class="vs">"</span>)</span>
 <span id="cb15-225"><a href="#cb15-225" aria-hidden="true" tabindex="-1"></a>ax.legend(fontsize<span class="op">=</span><span class="dv">9</span>)</span>
 <span id="cb15-226"><a href="#cb15-226" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
 <span id="cb15-227"><a href="#cb15-227" aria-hidden="true" tabindex="-1"></a></span>
@@ -1087,6 +1088,16 @@ window.Quarto = {
 </div>
 </div>
 <a class="quarto-notebook-link" id="nblink-1" href="../_display/Generic1DHMM_FEniCS2-preview.html#cell-0">Source: Heterogeneous Multiscale Methods (HMM) Demonstration</a></section>
+<p><span class="eyebrow">software</span></p>
+<section id="software-citations" class="level2">
+<h2 class="anchored" data-anchor-id="software-citations">Software &amp; citations</h2>
+<p>This notebook is built on legacy FEniCS, run on Google Colab through FEM on Colab. If you use it in your own work, please cite them:</p>
+<div class="refs">
+<p>A. Logg, K.-A. Mardal, G. N. Wells et al.&nbsp;<em>Automated Solution of Differential Equations by the Finite Element Method.</em> Springer (2012). <a href="https://doi.org/10.1007/978-3-642-23099-8">doi:10.1007/978-3-642-23099-8</a></p>
+<p>M. S. Alnæs, J. Blechta, J. Hake, A. Johansson, B. Kehlet, A. Logg, C. Richardson, J. Ring, M. E. Rognes and G. N. Wells. <em>The FEniCS Project Version 1.5.</em> Archive of Numerical Software <strong>3</strong> (2015). <a href="https://doi.org/10.11588/ans.2015.100.20553">doi:10.11588/ans.2015.100.20553</a></p>
+<p>A. Logg and G. N. Wells. <em>DOLFIN: Automated Finite Element Computing.</em> ACM Transactions on Mathematical Software <strong>37</strong> (2010). <a href="https://doi.org/10.1145/1731022.1731030">doi:10.1145/1731022.1731030</a></p>
+<p>F. Ballarin et al.&nbsp;<em>FEM on Colab.</em> <a href="https://fem-on-colab.github.io/">fem-on-colab.github.io</a></p>
+</div>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1102,6 +1113,7 @@ window.Quarto = {
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
