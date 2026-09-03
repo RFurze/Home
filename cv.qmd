@@ -268,7 +268,5 @@ finite-element modelling; parallel and distributed computation; HPC.
 Professional — project and stakeholder management, financial modelling,
 technical communication with non-specialist audiences.
 
-[service]{.eyebrow}
-
+---
 References available on request.
-:::
