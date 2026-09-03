@@ -18,7 +18,7 @@ toc-depth: 2
 -->
 
 ::: {.contact}
-[Email](mailto:py07rf@leeds.ac.uk)
+[Email](mailto:robin@rfurze.co.uk)
 [ORCID](https://orcid.org/0009-0008-6692-4982)
 [GitHub](https://github.com/RFurze)
 :::

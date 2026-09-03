@@ -72,5 +72,5 @@ libraries (FEniCS, NGSolve, PETSc and others) remain under their own licences.
 
 ## Contact
 
-Robin Furze — [py07rf@leeds.ac.uk](mailto:py07rf@leeds.ac.uk) ·
+Robin Furze — [robin@rfurze.co.uk](mailto:robin@rfurze.co.uk) ·
 [ORCID 0009-0008-6692-4982](https://orcid.org/0009-0008-6692-4982)
