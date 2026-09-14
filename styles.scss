@@ -87,11 +87,63 @@ $hairline: #E3E8EB;
   border-bottom: 1px solid $hairline;   // keep the rule under the address even
 }                                        // though it is the only child of its <p>
 
+// The right column now stacks two cards, so the top offset that used to sit on
+// .hero-card moves to the column itself.
+.hero-side { margin-top: .3rem; }
+.hero-side .hero-card { margin-top: 0; }
+
+// Newest publication, shown beside the hero. Echoes .hero-card — same white
+// ground and teal left rule — so the pair reads as standing information rather
+// than body copy, while the heading font marks the title as a work, not a link.
+.hero-pub {
+  border: 1px solid $hairline;
+  border-left: 3px solid $film;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1rem 1.1rem 1.1rem;
+  margin-top: 1rem;
+
+  .eyebrow { margin-bottom: .5rem; }
+
+  p { margin: 0; font-size: .95rem; }   // override the 1.18rem hero body size
+
+  .hp-title {
+    display: block;
+    font-family: $headings-font-family;
+    font-weight: 600;
+    font-size: .98rem;
+    line-height: 1.3;
+    color: $ink;
+    text-decoration: none;
+  }
+  .hp-title:hover { color: $film-deep; text-decoration: underline; }
+
+  .hp-meta {
+    display: block;
+    font-size: .85rem;
+    color: $steel;
+    line-height: 1.4;
+    margin-top: .45rem;
+  }
+
+  .hp-more {
+    display: block;
+    margin-top: .75rem;
+    padding-top: .6rem;
+    border-top: 1px solid $hairline;
+    font-size: .88rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .hp-more:hover { text-decoration: underline; }
+}
+
 @media (max-width: 760px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 1.5rem 0;
   }
+  .hero-side { margin-top: 0; }
   .hero-card { margin-top: 0; }
 }
 
@@ -123,6 +175,77 @@ $hairline: #E3E8EB;
 .quarto-grid-item:hover { border-color: $film; }
 
 .contact a { margin-right: 1.1rem; font-weight: 600; }
+
+/* ---- Publications ------------------------------------------------------ */
+
+// A published paper is the page's hardest evidence, so it is lifted out of the
+// prose onto its own white ground. Same card vocabulary as the hero, one step
+// heavier, so the two read as the same object at two sizes.
+.pub {
+  border: 1px solid $hairline;
+  border-left: 3px solid $film;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1.2rem 1.3rem 1.3rem;
+  margin: 1rem 0 1.8rem;
+
+  p { margin: 0; }
+}
+
+.pub-badge {
+  font-family: $font-family-monospace;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $film-deep;
+  background: rgba(14, 124, 134, .08);
+  border-radius: 4px;
+  padding: .24rem .55rem;
+  display: inline-block;
+  margin-bottom: .8rem;
+}
+
+// Deliberately not a real heading: the title is long, and an <h3> here would
+// push it into the sidebar table of contents.
+.pub-title {
+  display: block;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.18rem;
+  line-height: 1.3;
+  color: $ink;
+  text-decoration: none;
+  margin-bottom: .6rem;
+}
+.pub-title:hover { color: $film-deep; text-decoration: underline; }
+
+.pub-authors { display: block; font-size: .95rem; color: $ink; line-height: 1.5; }
+.pub-where   { display: block; font-size: .95rem; color: $steel; margin-top: .2rem; }
+
+.pub-summary {
+  margin-top: .95rem;
+  padding-top: .95rem;
+  border-top: 1px solid $hairline;
+
+  p { font-size: .95rem; line-height: 1.55; }
+}
+
+.pub-btn { margin-top: 1.1rem; font-size: .92rem; vertical-align: middle; }
+
+// Plain text, not a link: this is the string you copy into a bibliography, and
+// it survives the print stylesheet that hides the button above.
+.pub-doi {
+  font-family: $font-family-monospace;
+  font-size: .82rem;
+  color: $steel;
+  margin-left: .85rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+@media (max-width: 620px) {
+  .pub-doi { display: block; margin: .7rem 0 0; white-space: normal; }
+}
 
 // Hanging-indent reference list for the software citations on method pages.
 .refs {
@@ -187,6 +310,7 @@ $hairline: #E3E8EB;
 @media print {
   .navbar, .page-footer, #quarto-margin-sidebar, .toc, .btn-accent { display: none !important; }
   body { font-size: 10.5pt; }
-  .cv-entry { break-inside: avoid; }
+  .cv-entry, .pub { break-inside: avoid; }
+  .pub-doi { margin-left: 0; display: block; margin-top: .6rem; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; color: #555; }
 }

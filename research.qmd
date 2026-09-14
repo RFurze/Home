@@ -25,6 +25,33 @@ correct the macro solve. The [methods](methods/index.qmd) section works
 this idea through on a clean 1D elliptic model problem before it appears
 in the full elastohydrodynamic setting.
 
+[publications]{.eyebrow}
+
+## Publications
+
+<!--
+  One card per paper, newest first. The newest is also summarised in the hero
+  card on index.qmd and listed in cv.qmd — update all three together.
+-->
+
+::: {.pub}
+[peer-reviewed journal article]{.pub-badge}
+
+[A transient multiscale framework for elastohydrodynamic lubrication of rough ball-in-socket bearings](https://doi.org/10.1016/j.cma.2026.119363){.pub-title}
+
+[**R. Furze**, P. K. Jimack, M. Bryant, M. Al-Hajjar, L. Wang and G. de Boer]{.pub-authors}
+
+[*Computer Methods in Applied Mechanics and Engineering*, **463** (2027)]{.pub-where}
+
+::: {.pub-summary}
+A multiscale model reproduces a high-resolution deterministic solution for rough
+EHL within 3% in minimum film thickness and 3% in pressure, at a thirteenfold
+reduction in computational cost, under ASTM F3143 reciprocating hip loading.
+:::
+
+[Read the article](https://doi.org/10.1016/j.cma.2026.119363){.btn-accent .pub-btn} [doi:10.1016/j.cma.2026.119363]{.pub-doi}
+:::
+
 [tools]{.eyebrow}
 
 ## Tools
@@ -32,15 +59,3 @@ in the full elastohydrodynamic setting.
 FEniCS / PETSc for the finite-element solves, with HPC scaling for the
 parameter studies. Notebooks here are self-contained demonstrations rather than
 the production solver.
-
-[publications]{.eyebrow}
-
-## Publications
-
-**R. Furze**, P. K. Jimack, M. Bryant, M. Al-Hajjar, L. Wang and G. de Boer.
-*A transient multiscale framework for elastohydrodynamic lubrication of rough
-ball-in-socket bearings.* Comput. Methods Appl. Mech. Engrg., *463* (2027) [https://doi.org/10.1016/j.cma.2026.119363](https://doi.org/10.1016/j.cma.2026.119363)
-
-A multiscale model reproduces a high-resolution deterministic solution for rough
-EHL within 3% in minimum film thickness and 3% in pressure, at a thirteenfold
-reduction in computational cost, under ASTM F3143 reciprocating hip loading.

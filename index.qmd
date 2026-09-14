@@ -20,6 +20,8 @@ full-joint elastohydrodynamic simulation.
 [Methods & code →](methods/index.qmd){.btn-accent} &nbsp;&nbsp; [Read the research](research.qmd)
 :::
 
+::: {.hero-side}
+
 ::: {.hero-card}
 [contact]{.eyebrow}
 
@@ -27,6 +29,23 @@ full-joint elastohydrodynamic simulation.
 [Curriculum vitae](cv.qmd)
 [ORCID 0009-0008-6692-4982](https://orcid.org/0009-0008-6692-4982)
 [GitHub · RFurze](https://github.com/RFurze)
+:::
+
+<!--
+  Newest publication, shown here so it is visible without scrolling or
+  navigating. The full entry lives on research.qmd and the CV list in cv.qmd —
+  when a paper lands, update all three (newest first).
+-->
+::: {.hero-pub}
+[latest publication]{.eyebrow}
+
+[A transient multiscale framework for elastohydrodynamic lubrication of rough ball-in-socket bearings](https://doi.org/10.1016/j.cma.2026.119363){.hp-title}
+
+[Computer Methods in Applied Mechanics and Engineering · 463 (2027)]{.hp-meta}
+
+[All publications →](research.qmd#publications){.hp-more}
+:::
+
 :::
 
 :::
